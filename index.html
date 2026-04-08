@@ -3,58 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis XV Años - La Bella Durmiente</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <title>Mis XV Años - Sherlyn Sanchez Torres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
-        /* Animación de fondo: Brillos */
+        /* Brillos mágicos */
         @keyframes estrellas {
             0% { opacity: 0; transform: translateY(0); }
             50% { opacity: 1; }
             100% { opacity: 0; transform: translateY(-100vh); }
         }
 
-        body {
-            background: radial-gradient(circle, #fff0f3 0%, #ffc1d1 100%);
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-            color: #5a3e45;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        /* Contenedor de los brillos */
         .sparkle {
-            position: absolute;
+            position: fixed;
             background: white;
             border-radius: 50%;
             opacity: 0;
             animation: estrellas 5s infinite;
             pointer-events: none;
+            z-index: 1;
         }
 
-        /* Animación de entrada de la tarjeta */
-        @keyframes aparecer {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+        body {
+            background: radial-gradient(circle, #fff0f3 0%, #ffc1d1 100%);
+            margin: 0;
+            padding: 40px 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #5a3e45;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
 
-        .invitacion {
-            background-color: rgba(255, 255, 255, 0.95);
+        .tarjeta {
+            background-color: rgba(255, 255, 255, 0.96);
             width: 85%;
             max-width: 450px;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(216, 27, 96, 0.2);
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(216, 27, 96, 0.2);
             text-align: center;
-            border: 4px double #f06292;
+            border: 3px double #f06292;
             position: relative;
             z-index: 10;
-            animation: aparecer 1.5s ease-out; /* La magia al iniciar */
+        }
+
+        .castillo-top {
+            width: 140px;
+            margin-top: -70px;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
+            position: relative;
+            z-index: 15;
         }
 
         h1 {
@@ -62,83 +62,82 @@
             font-size: 3.5rem;
             color: #d81b60;
             margin: 10px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
         }
 
-        .subtitulo {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            color: #f06292;
-            font-weight: bold;
+        .foto-quinceanera {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #f06292;
+            object-fit: cover;
+            margin: 15px auto;
+            box-shadow: 0 0 20px rgba(240, 98, 146, 0.4);
         }
 
-        .seccion {
-            margin: 25px 0;
+        /* --- ESTILO PARA LA NUEVA CORONA DE ROSAS --- */
+        .corona-rosas {
+            width: 100%;
+            max-width: 280px; /* Ajustado para que no sea tan grande */
+            height: auto;
+            margin: 20px auto; /* Espacio arriba y abajo */
+            display: block;
+            /* Pequeña sombra para dar profundidad, ya que es sobre fondo blanco */
+            filter: drop-shadow(0 3px 5px rgba(0,0,0,0.05));
+        }
+
+        .info {
+            margin: 10px 0;
             border-top: 1px solid #fce4ec;
             padding-top: 15px;
         }
 
         .boton {
             background: linear-gradient(45deg, #f06292, #d81b60);
-            color: white;
-            padding: 14px 25px;
+            color: white !important;
+            padding: 14px 28px;
             text-decoration: none;
             border-radius: 30px;
             display: inline-block;
-            margin-top: 15px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(240, 98, 146, 0.4);
-        }
-
-        /* Efecto de resplandor al tocar el botón */
-        .boton:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(240, 98, 146, 0.7);
-        }
-
-        .decoracion {
-            font-size: 2.5rem;
-            color: #ffb7c5;
-            filter: drop-shadow(0 0 5px white);
+            margin: 10px 5px;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
 
     <div class="sparkle" style="top: 20%; left: 10%; width: 5px; height: 5px; animation-delay: 0s;"></div>
-    <div class="sparkle" style="top: 50%; left: 80%; width: 7px; height: 7px; animation-delay: 1s;"></div>
-    <div class="sparkle" style="top: 80%; left: 30%; width: 4px; height: 4px; animation-delay: 2s;"></div>
+    <div class="sparkle" style="top: 50%; left: 85%; width: 7px; height: 7px; animation-delay: 1s;"></div>
     <div class="sparkle" style="top: 10%; left: 70%; width: 6px; height: 6px; animation-delay: 3s;"></div>
-    <div class="sparkle" style="top: 40%; left: 20%; width: 5px; height: 5px; animation-delay: 4s;"></div>
 
-    <div class="invitacion">
-        <div class="decoracion">✨</div>
-        <p class="subtitulo">Mis XV Años</p>
+    <img src="https://i.pinimg.com/originals/9e/1b/37/9e1b379e4368536b32b9da152c90666d.png" class="castillo-top" alt="Castillo">
+
+    <div class="tarjeta">
+        <p style="letter-spacing: 3px; color: #f06292; font-weight: bold; margin-bottom: 0;">MIS XV AÑOS</p>
         <h1>Sherlyn Sanchez Torres</h1>
-        
-        <p style="font-style: italic;">"Érase una vez, un sueño que se volvió realidad en una noche llena de magia..."</p>
 
-        <div class="seccion">
-            <p style="font-size: 1.2rem;"><b>Sábado, 12 de Diciembre de 2026</b></p>
-            <p>A las 19:00 Horas</p>
+        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=500&q=80" class="foto-quinceanera" alt="Sherlyn">
+
+        <div class="decoracion">✨</div>
+
+ <p style="font-style: italic; color: #880e4f; font-size: 1.1rem;">"Érase una vez, un sueño que se volvió realidad..."</p>
+
+        <img src="https://i.pinimg.com/736x/6d/f8/e2/6df8e2825a3c041bb07db0b53b10d223.jpg" class="corona-rosas" alt="Corona de Rosas Vintage">
+
+        <div class="info">
+            <p style="font-size: 1.2rem;"><b>Sábado, 12 de Diciembre de 2026</b><br>19:00 Horas</p>
         </div>
 
-        <div class="seccion">
-            <h3>Recepcion <h3>
-
-            <p>Salón "Almendras"<br>
-           Calle I. Zaragoza 1943, Guerrero, 88240 Nuevo Laredo, Tamps.</p>
+        <div class="info">
+            <h3>Lugar de la Recepción</h3>
+            <p><b>Salón Las Almendras</b><br>
+            Calle I. Zaragoza 1943, Colonia Guerrero<br>
+            Nuevo Laredo, Tamaulipas</p>
+            <a href="https://www.google.com/maps/place/Sal%C3%B3n+Las+Almendras/@27.4788252,-99.5005787,17z/data=!4m6!3m5!1s0x866123b4d2a8454b:0xf9f270fb79f8cfa8!8m2!3d27.4788252!4d-99.5005787!16s%2Fg%2F11c0xj96hg?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D" class="boton" target="_blank">📍 Ver Ubicación</a>
         </div>
 
-        <a href="https://www.google.com/maps/place/Sal%C3%B3n+Las+Almendras/@27.4788252,-99.5005787,17z/data=!4m6!3m5!1s0x866123b4d2a8454b:0xf9f270fb79f8cfa8!8m2!3d27.4788252!4d-99.5005787!16s%2Fg%2F11c0xj96hg?entry=ttu&g_ep=EgoyMDI2MDQwNS4wIKXMDSoASAFQAw%3D%3D" 
-
-            class="boton" target="_blank">📍 Ver Ubicación</a>
-        <br>
-        <a href="https://w.app/mrluhy" class="boton" style="background: #ad1457;">💌 Confirmar Asistencia</a>
+        <a href="https://w.app/mrluhy" class="boton" style="background: #880e4f;">💖 Confirmar Asistencia</a>
         
-        <div class="decoracion" style="margin-top: 20px;">🌹</div>
+        <p style="font-size: 0.9rem; margin-top: 20px; color: #f06292; font-weight: 600;">¡Te espero para celebrar este cuento de hadas!</p>
     </div>
 
 </body>
